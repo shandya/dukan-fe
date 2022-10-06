@@ -1,0 +1,155 @@
+.col-filter {
+  @include media-breakpoint-up(md) { 
+    flex: 0 0 220px;
+    width: 220px;
+  }
+}
+
+.col-products {
+  @include media-breakpoint-up(md) { 
+    flex: 0 0 calc(100% - 220px);
+    width: calc(100% - 220px);
+  }
+}
+
+.list-products {
+  padding: 0;
+  margin: 0 -10px;
+  width: calc(100% + 20px);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  .list-item {
+    width: 50%;
+    padding: 0 10px;
+
+    @include media-breakpoint-up(lg) { 
+      width: 25%;
+    }
+
+    @include media-breakpoint-up(xl) { 
+      width: 20%;
+    }
+  }
+
+  // .list-link {
+  //   text-decoration: none !important;
+  //   height: 100%;
+  //   display: block;
+  //   // padding-bottom: 16px;
+
+  //   .card-product {
+  //     height: 100%;
+  //   }
+  // }
+}
+
+.list-products--large {
+  .list-item {
+    width: 50%;
+
+    @include media-breakpoint-up(md) { 
+      width: 25%;
+    }
+  }
+}
+
+
+.product-sidebar {
+  .sidebar-title {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+  }
+}
+
+.product-sidebar {
+  @include media-breakpoint-down(md) { 
+    display: none;
+  }
+}
+
+.close-sidebar-modal {
+  height: 80px;
+  padding: 1.8rem 1rem;
+  margin: 0;
+  position: relative;
+
+  span {
+    color: map-get($colors, lavender);
+  }
+
+  .btn-close {
+    color: map-get($colors, mint-green);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  
+}
+
+.product-sidebar.modal-mobile-visible {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: white;
+
+  .sidebar-title {
+
+  }
+
+  form,
+  .accordion {
+    height: 100%;
+  }
+
+  .card-product-filter {
+    height: calc(100% - 80px);
+  }
+
+  .card-apply-filter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    height: 65px;
+  }
+
+  .accordion {
+    padding-bottom: 65px;
+    overflow: auto;
+  }
+}
+
+
+.search-navigation {
+  flex-direction: column-reverse;
+
+  @include media-breakpoint-up(md) { 
+    flex-direction: row;
+  }
+}
+
+.sort-product-wrapper {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) { 
+    margin-bottom: 0;
+    width: 200px;
+  }
+
+  .select2 {
+    text-align: left;
+  }
+}
+
+.search-result-wrapper {
+  display: flex;
+}

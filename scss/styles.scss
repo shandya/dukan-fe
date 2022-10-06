@@ -1,0 +1,50 @@
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+// vendors 
+@import "bootstrap/scss/bootstrap-reboot"; 
+@import "bootstrap/scss/bootstrap-grid"; 
+@import "bootstrap/scss/media"; 
+@import "bootstrap/scss/buttons"; 
+@import "bootstrap/scss/forms"; 
+@import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar";  
+@import "bootstrap/scss/card";  
+@import "bootstrap/scss/transitions";  
+@import "bootstrap/scss/breadcrumb";
+
+@import "../scss/variables";
+@import "../scss/typography";
+@import "../scss/helpers";
+
+@import "vendors/select2.min";
+
+// components
+@import "../scss/components/buttons";  
+@import "../scss/components/forms";  
+@import "../scss/components/navs";  
+@import "../scss/components/sliders";  
+@import "../scss/components/cards";  
+@import "../scss/components/breadcrumb"; 
+
+// pages
+@import "../scss/pages/general";
+@import "../scss/pages/landing";
+@import "../scss/pages/products";
+@import "../scss/pages/product-detail";
+
+
+@include media-breakpoint-up(md) { 
+
+}
+
+@include media-breakpoint-up(lg) { 
+
+}
+
+@include media-breakpoint-up(xl) { 
+
+}
+
+

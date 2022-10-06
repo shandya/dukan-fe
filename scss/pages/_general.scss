@@ -1,0 +1,229 @@
+.section {
+  padding: 1rem 0;
+  background: #F5F5F5;
+  overflow: hidden;
+
+  @include media-breakpoint-up(md) { 
+    padding: 2rem 0;
+  }
+
+  @include media-breakpoint-up(lg) { 
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-bottom: 1.4rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    margin: 0;
+    align-self: baseline;
+
+    @include media-breakpoint-up(md) { 
+      font-size: 1.2rem;
+    }
+  
+    @include media-breakpoint-up(lg) { 
+      font-size: 1.3rem;
+    }
+
+    @include media-breakpoint-up(xl) { 
+      font-size: 1.4rem;
+    }
+  }
+
+  .section-title-link {
+    font-size: 0.8rem;
+    color: map-get($colors, fade-gray);
+    align-self: baseline;
+    margin-left: auto;
+
+    @include media-breakpoint-up(md) { 
+      margin-left: 3rem;
+    }
+  
+    @include media-breakpoint-up(lg) { 
+      font-size: 0.9rem;
+    }
+
+    @include media-breakpoint-up(xl) { 
+      font-size: 1rem;
+    }
+  }
+
+  .list-stars {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    .list-item {
+      display: inline-block;
+      margin-right: 0.2rem;
+      width: auto !important;
+    }
+
+    .list-image {
+      height: 20px;
+      width: 20px;
+      fill: map-get($colors, yellow);
+    }
+
+    span {
+      font-size: 1.2em;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  }
+}
+
+.section--testimonials {
+  .chosen-product-wrapper {
+    margin-top: 2rem;
+  }
+
+  .slider-chosen-product-title {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: map-get($colors, dark-gray);
+  }
+}
+
+.section--approved-by-dukan {
+  .approved-products-wrapper {
+    position: relative;
+  }
+
+  .approved-products-banner {
+    background: linear-gradient(85.43deg, #F50081 3.26%, #FF6FBB 137.57%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    width: 60%;
+    border-radius: 10px;
+    transform: translate(0);
+    opacity: 1;
+    transition: all 0.3s ease-in;
+
+    @include media-breakpoint-up(md) { 
+      width: 33.3;
+    }
+  
+    @include media-breakpoint-up(lg) { 
+      width: 30%;
+    }
+
+    @include media-breakpoint-up(xl) { 
+      width: 25%;
+    }
+
+
+    &.hidden {
+      transform: translate(-15%);
+      opacity: 0;
+    }
+  }
+
+  .product-banner-image {
+    height: 100%;
+    display: block;
+  }
+  
+}
+
+.section--updates {
+  .list-updates {
+    list-style: none;
+    margin: 0 -10px 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) { 
+      flex-direction: row;
+
+      margin: 0 -10px;
+    }
+
+    .list-item {
+      width: 100%;
+      padding: 0 10px 20px;
+
+      @include media-breakpoint-up(md) { 
+        width: 50%;
+        padding: 0 10px;
+      }
+    }
+
+    .list-link {
+      text-decoration: none;
+      display: block;
+    }
+
+    .list-card {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+    }
+
+    .list-image {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 0.8rem;
+    }
+
+    .list-meta-info {
+      color: black;
+      font-size: 0.8rem;
+      margin-bottom: 0.3em;
+    }
+
+    .list-tag {
+      margin-right: 1.1em;
+    }
+
+    .list-publish-date {
+      font-size: 0.8em;
+      color: map-get($colors, dark-gray);
+    }
+
+    .list-title {
+      font-size: 0.8rem;
+      font-weight: normal;
+      margin-bottom: 0.3em;
+      color: map-get($colors, lavender);
+    }
+
+    .list-excerpt {
+      font-size: 0.65rem;
+      color: map-get($colors, neutral-gray);
+      line-height: 1.6;
+    }
+  }
+
+  .cta-wrapper {
+    display: block;
+
+    @include media-breakpoint-up(md) { 
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  .cta-image {
+    display: block;
+    width: 100%;
+  }
+}

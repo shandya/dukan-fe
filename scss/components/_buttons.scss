@@ -1,0 +1,72 @@
+.btn {
+  text-decoration: none !important;
+  transition: all 0.15s ease-in;
+
+  .button-image {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+  }
+}
+
+.btn-product-tags {
+  line-height: 1;
+  text-align: center;
+  color: #8B8989;
+  border: 1px solid #8B8989;
+  border-radius: 2em;
+  padding: 0.8em 1em;
+  font-size: 0.75rem;
+  color: map-get($colors, medium-gray);
+
+  &:hover {
+    background: map-get($colors, medium-gray);
+    color: white;
+  }
+}
+
+input:checked ~ .btn-product-tags {
+  color: white;
+  background: map-get($colors, lavender);
+  border-color: map-get($colors, lavender);
+}
+
+.btn-lavender {
+  background: map-get($colors, lavender);
+  color: white !important;
+
+  .button-image {
+    fill: white;
+  }
+
+  &:hover {
+    background: lighten(map-get($colors, lavender), 10%);
+  }
+
+  &:active,
+  &:focus {
+    background: darken(map-get($colors, lavender), 10%);
+  }
+}
+
+.btn-load-more {
+  background: white;
+  padding: 0.8em 1.6em;
+  border-radius: 3em;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15) inset;
+  }
+
+  .btn-image {
+    fill: map-get($colors, dark-blue);
+    width: 1.8em;
+    height: 1.8em;
+  }
+}

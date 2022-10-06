@@ -1,0 +1,16 @@
+.breadcrumb {
+  background: none;
+  
+  a {
+    color: map-get($colors, lavender);
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: black;
+    content: ">";
+  }
+
+  .breadcrumb-item.active {
+    color: map-get($colors, neutral-gray);
+  }
+}
