@@ -1,0 +1,259 @@
+.header-information {
+  background: map-get($colors, turqoise);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+
+  a {
+    color: white !important;
+  }
+
+  span,
+  svg {
+    vertical-align: middle;
+  }
+  
+
+  .information-link {
+    padding: 0.6em 1em;
+
+    .link-image {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: middle;
+      margin-left: 0.2em;
+      fill: white;
+    }
+  }
+  
+  .information-copy {
+    padding: 0.6em 1em;
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+
+  .dropdown-select-language {
+    .dropdown-toggle {
+      color: white;
+      padding: 0.6em 1em;
+      font-size: 0.8rem;
+      box-shadow: none !important;
+  
+      &:after {
+        display: none;
+      }
+    }
+
+    .button-image {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: middle;
+      margin-left: 0.2em;
+      fill: white;
+      transform: rotate(90deg);
+    }
+  }
+
+  .dropdown-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: white;
+    margin-right: 0.3em;
+  }
+
+  .dropdown-menu {
+    background: map-get($colors, turqoise);
+    border: none;
+    font-size: 0.8rem;
+
+    .dropdown-item {
+      padding: 0.5em 1.6em;
+
+      &:hover {
+        background: lighten(map-get($colors, turqoise), 5%);
+      }
+
+      &:active,
+      &:focus {
+        background: darken(map-get($colors, turqoise), 5%);
+      }
+    }
+  }
+}
+
+.site-header {
+  .container-navbar {
+    flex-direction: column;
+
+    .row {
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .navbar-brand-image {
+    height: 60px;
+    display: block;
+  }
+
+  .header-promo-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-promo-link {
+    background: #FFB12B;
+    border-radius: 4px;
+    padding: 0.5em 0.8em;
+    font-size: 0.8rem;
+    color: #585858;
+    text-decoration: none !important;
+
+    .header-promo-image {
+      fill: #585858;
+      height: 1.4em;
+      width: 1.4em;
+      margin-right: 0.4em;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  .navbar-user-menu {
+    padding: 0;
+    margin-left: 2rem;
+
+    .navbar-nav {
+      flex-direction: row;
+      flex-shrink: 0;
+    }
+
+    .current-basket {
+      padding: 0 0.8rem;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      .current-basket-label {
+        font-size: 0.65rem;
+        line-height: 1.6;
+        color: map-get($colors, neutral-gray);
+        white-space: nowrap;
+      }
+
+      .current-basket-value {
+        font-size: 0.8rem;
+        line-height: 1;
+        color: map-get($colors, dark-gray);
+      }
+    }
+
+    .shopping-wrapper {
+      position: relative;
+
+      .shopping-icon {
+        height: 1.2rem;
+        width: 1.2rem;
+        fill: map-get($colors, medium-gray);
+      }
+
+      .shopping-value {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background: map-get($colors, lavender);
+        color: white;
+        line-height: 1;
+        font-size: 0.7rem;
+        transform: translate(50%);
+        padding: 0.15em 0.4em;
+        text-align: center;
+        min-width: 1em;
+        border-radius: 2em;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+
+  .form-search-product {
+    position: relative;
+    margin-left: auto;
+    flex: 1;
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .form-control {
+      background: rgba(229, 229, 229, 0.88);
+      border-radius: 2em;
+      font-size: 0.9rem;
+      padding-right: 2rem !important;
+      width: 100%;
+    }
+
+    .btn-search {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding-right: 0.6rem;
+      
+      .btn-icon {
+        height: 1.4rem;
+        width: 1.4rem;
+        fill: map-get($colors, medium-gray);
+      }
+    }
+  }
+
+  .navbar-menu {
+    .navbar-nav {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item--download-app {
+      margin-left: auto;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      color: map-get($colors, medium-gray);
+      padding-left: 1em;
+      padding-right: 1em;
+      transition: all 0.15s ease-in;
+
+      &:hover {
+        color: map-get($colors, turqoise);
+      }
+
+      &:active,
+      &:focus {
+        color: darken(map-get($colors, turqoise), 5%);
+      }
+    }
+  }
+
+  .download-app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 4rem;
+
+    .app-image {
+      height: 30px;
+    }
+  }
+}

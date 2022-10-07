@@ -9,10 +9,11 @@
 @import "bootstrap/scss/buttons"; 
 @import "bootstrap/scss/forms"; 
 @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar";  
+@import "bootstrap/scss/navbar";  
 @import "bootstrap/scss/card";  
 @import "bootstrap/scss/transitions";  
 @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/dropdown";
 
 @import "../scss/variables";
 @import "../scss/typography";
@@ -24,6 +25,7 @@
 @import "../scss/components/buttons";  
 @import "../scss/components/forms";  
 @import "../scss/components/navs";  
+@import "../scss/components/navbar";  
 @import "../scss/components/sliders";  
 @import "../scss/components/cards";  
 @import "../scss/components/breadcrumb"; 
