@@ -86,19 +86,37 @@
               <div class="current-basket-value">€ 245.34</div>
             </div>
           </li>
-          <li class="nav-item px-1 d-none d-md-block">
+          <!-- <li class="nav-item px-1 d-none d-md-block">
             <a class="nav-link btn btn-outline-primary px-2 px-md-3" href="#">se connecter</a>
           </li>
           <li class="nav-item px-1 d-none d-md-block">
             <a class="nav-link btn btn-primary px-2 px-md-3" href="#">s'enregistrer</a>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-toggle-profile" href="#" id="navbaProfilerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar-wrapper">
+                <img src="assets/images/dummy/dummy-avatar.jpg" alt="" class="avatar-image">
+                <svg class="toggle-chevron">
+                  <use xlink:href="assets/images/sprite.svg#svg-chevron-right"></use>
+                </svg>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfileDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
         </ul>
       </div>
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        toggle drop down
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <svg class="navbar-toggler-icon">
+          <use xlink:href="assets/images/sprite.svg#svg-hamburger"></use>
+        </svg>
       </button>
     </div>
 

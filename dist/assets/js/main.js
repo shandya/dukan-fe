@@ -10,6 +10,14 @@ $(function() {
     });
   });
 
+  $('#navbarMenu').on('show.bs.collapse', function () {
+    $('body').addClass('navbar-collapsed');
+  })
+
+  $('#navbarMenu').on('hide.bs.collapse', function () {
+    $('body').removeClass('navbar-collapsed');
+  })
+
   let sliderCategories = $('#slider-categories');
   if (sliderCategories) {
     sliderCategories.slick({

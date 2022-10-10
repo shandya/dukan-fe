@@ -2,6 +2,7 @@ const path = require('path');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './index.js',
   output: {
     filename: 'main.js',
